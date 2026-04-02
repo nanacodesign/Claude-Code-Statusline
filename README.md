@@ -86,23 +86,25 @@ The status bar appears immediately after restarting.
 
 ---
 
-## Support This Project
+## Got feedback or a tip to add? 
 
-If **Claude-Code-Statusline** helps your workflow:
-
-- ⭐ **Star the repo** — helps others discover it
-- 🐛 **[Report bugs](../../issues)**
-- 💡 **[Suggest features](../../issues)**
-- 📝 **Contribute code** — PRs welcome
+- ⭐ **Star the repo**
+- 💎 **[Report bugs or share idea](../../issues)**
 
 ---
 
-## About
+## About nana
 
-**nana** — AI-native product designer based in Sydney, from Seoul. 🇦🇺 🇰🇷
+AI-native product designer based in Sydney, from Seoul. 🇦🇺 🇰🇷
 
 Solving complex user problems and shaping them into clear, accessible, and delightful experiences — using AI agents and tools to build fast, validate fast, and grow fast.
 
-Grab a coffee with me ☕ — I'd love to connect!
+I'd love to connect! ☕️ 🧙🏻
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-nanacodesign-blue?logo=linkedin)](https://www.linkedin.com/in/nanacodesign/) &nbsp; [![Website](https://img.shields.io/badge/Website-nanacodesign.com-black?logo=safari)](http://nanacodesign.com) &nbsp; [![Email](https://img.shields.io/badge/Email-nanacodesigner@gmail.com-red?logo=gmail)](mailto:nanacodesigner@gmail.com)
+<p>
+  <a href="https://www.linkedin.com/in/nanacodesign/">🔗 LinkedIn</a>
+  <br>
+  <a href="http://nanacodesign.com">🌐 nanacodesign.com</a>
+  <br>
+  <a href="mailto:nanacodesigner@gmail.com">💌 nanacodesigner@gmail.com</a>
+</p>
