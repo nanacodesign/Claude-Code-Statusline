@@ -6,6 +6,8 @@ A single-line status bar for [Claude Code](https://claude.ai/code) that shows mo
 Sonnet 4.6 [██████████] 29% • 1k/200k • main • myproject • Reset in 2h 52m • 38% used
 ```
 
+![Claude Code Statusline preview](assets/preview.png)
+
 ## What it shows
 
 | Segment | Source |
