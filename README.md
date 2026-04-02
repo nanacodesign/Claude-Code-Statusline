@@ -8,10 +8,6 @@ A single-line status bar for [Claude Code](https://claude.ai/code) that shows mo
 Sonnet 4.6 [██████████] 29% • 1k/200k • main • myproject • Reset in 2h 52m • 38% used
 ```
 
-> Using this? Please share your statusline! 🙌 I'd love to see how it looks in your setup — drop a screenshot in [Issues](../../issues).
-
----
-
 ## What it shows
 
 | Segment | Source |
@@ -89,8 +85,9 @@ The status bar appears immediately after restarting.
 **Fix:** The script caches the last known values to `/tmp/claude_rate_limits_cache.json`. On the next startup, it loads from cache instead of defaulting to zero. The `resets_at` value is an absolute epoch timestamp so the countdown stays accurate.
 
 ---
-
-## Got feedback or a tip to add? 
+## Try & Share
+> Love this? Please share your statusline and <a href="https://www.linkedin.com/in/nanacodesign/">tag me</a>! <br> 
+I'd love to see how it looks in your setup.🤩
 
 - ⭐ **Star the repo**
 - 💎 **[Report bugs or share idea](../../issues)**
