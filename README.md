@@ -8,6 +8,8 @@ A single-line status bar for [Claude Code](https://claude.ai/code) that shows mo
 Sonnet 4.6 [██████████] 29% • 1k/200k • main • myproject • Reset in 2h 52m • 38% used
 ```
 
+> Using this? Please share your statusline! 🙌 I'd love to see how it looks in your setup — drop a screenshot in [Issues](../../issues).
+
 ---
 
 ## What it shows
