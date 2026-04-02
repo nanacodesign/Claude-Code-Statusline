@@ -9,17 +9,25 @@ import time
 
 RESET  = "\033[0m"
 EMPTY  = "\033[38;2;100;100;100m"  # #646464 — empty bar segments (dimmed)
+YELLOW = "\033[38;2;255;196;105m"  # #FFC469 — 51–70%
+RED    = "\033[38;2;255;121;121m"  # #FF7979 — 71%+
 SEP    = " • "
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
 
 def progress_bar(pct: float) -> str:
-    """10-char progress bar. Both segments use █ (same glyph = same height).
-    Filled = terminal default color; empty = #646464 lighter grey for contrast."""
+    """10-char progress bar. Filled color changes by usage level:
+    default (≤50%), yellow (51–70%), red (71%+). Empty = #646464 grey."""
+    if pct > 70:
+        fill_color = RED
+    elif pct > 50:
+        fill_color = YELLOW
+    else:
+        fill_color = ""
     filled = min(10, int(pct / 10))
     empty  = 10 - filled
-    return f"[{'█' * filled}{EMPTY}{'█' * empty}{RESET}]"
+    return f"[{fill_color}{'█' * filled}{EMPTY}{'█' * empty}{RESET}]"
 
 
 def colored_pct(pct: float) -> str:
@@ -56,7 +64,6 @@ def fmt_countdown(secs: int) -> str:
     return f"Reset in {secs // 60}m"
 
 
-
 # ── main ─────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -75,7 +82,7 @@ def main() -> None:
     ctx_size = int(ctx.get("context_window_size") or 200000)
     cwd      = (data.get("workspace") or {}).get("current_dir") or data.get("cwd") or ""
 
-    # Real-time session usage from rate_limits.five_hour (matches Settings → Usage page).
+    # Real-time session usage from rate_limits.five_hour (matches Settings > Usage page).
     # Cache the last known values so restarts don't reset to 0% / 5h 0m.
     CACHE = "/tmp/claude_rate_limits_cache.json"
     five_hour = (data.get("rate_limits") or {}).get("five_hour") or {}
