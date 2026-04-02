@@ -1,5 +1,7 @@
 # Claude-Code-Statusline
 
+![Claude-Code-Statusline preview](assets/preview.png)
+
 A single-line status bar for [Claude Code](https://claude.ai/code) that shows model, context usage, git branch, session limits, and reset timer — all in real-time with no token cost.
 
 ```
